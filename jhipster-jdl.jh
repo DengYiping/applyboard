@@ -1,0 +1,51 @@
+entity Company {
+	name String required
+    field String
+}
+
+entity Position {
+	title String required
+    salary Double
+    startDate LocalDate
+    location String
+}
+
+enum ApplicationStatus {
+	PREPARING, APPLIED, SCHEDULED, INTERVIEWED, OFFERED, REJECTED
+}
+
+enum ApplicationDecision {
+	ACCEPT, DECLINE, WITHDRAW
+}
+
+entity Application {
+	status ApplicationStatus required
+    decision ApplicationDecision
+    remark String
+}
+
+enum InterviewType {
+	HR, CODING, MANAGER, SYSTEM_DESIGN
+}
+
+entity Interview {
+	round Integer
+	detail String
+    type InterviewType
+}
+
+relationship ManyToOne {
+    Application{user} to User{application}
+}
+
+relationship OneToMany {
+	Position{application} to Application{position}
+    Application{interview(round)} to Interview
+}
+
+relationship OneToMany {
+	Company{position} to Position{company(name)}
+}
+
+
+
