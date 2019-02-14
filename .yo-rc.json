@@ -1,0 +1,35 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "io.applyboard"
+    },
+    "jhipsterVersion": "5.8.1",
+    "applicationType": "monolith",
+    "baseName": "applyboard",
+    "packageName": "io.applyboard",
+    "packageFolder": "io/applyboard",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mariadb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "ZGE4MjgxYjZmNmNhMmEzZjQ0ZWQwNDgwMTIxZTNmYjk2Nzg3YWEzY2U5YTRjNzI3YmFlMzdhMDY1OGU0N2Q5MGFhMWFlNDFkMDU2M2Y3OTE4YTM4ODNjNjljYWU1Y2JiOWFiYmQ1NzUwNjQ0OWU4MjgwYWRkMDNiODZiNzNmODM=",
+    "clientFramework": "react",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false
+  }
+}
